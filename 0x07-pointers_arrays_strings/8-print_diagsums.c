@@ -4,6 +4,7 @@
  * print_diagsums - prints the sum of the two diagonals
  * @a: input
  * @size : input
+ *
  * Return: Always 0.
  */
 void print_diagsums(int *a, int size)
@@ -15,7 +16,7 @@ void print_diagsums(int *a, int size)
 
 	for (x = 0; x < size; x++)
 	{
-		sum1 += a[x * size + x];
+		sum1 = sum1 + a[x * size + x];
 	}
 	for (x = size - 1; x >= 0; x--)
 	{
